@@ -63,8 +63,7 @@ Module.register("MMM-Vasttrafik-PublicTransport", {
     let wrapper = document.createElement("div");
     wrapper.className = "departure-board";
     if (!this.loaded && !this.failure) {
-      wrapper.innerHTML =
-        "<img src='https://www.vasttrafik.se/logos/vt-logo-negative.svg' style='object-fit:cover;width:300px;height:60px;'></img>";
+      wrapper.innerHTML = "<img src='https://www.vasttrafik.se/logos/vt-logo-negative.svg' style='width:100%;height:100%;'></img>";
       return wrapper;
     }
     if (this.failure) {
