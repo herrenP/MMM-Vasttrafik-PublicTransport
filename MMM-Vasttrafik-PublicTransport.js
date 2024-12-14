@@ -64,7 +64,7 @@ Module.register("MMM-Vasttrafik-PublicTransport", {
     wrapper.className = "departure-board";
     if (!this.loaded && !this.failure) {
       wrapper.innerHTML =
-        "<img src='http://seekvectorlogo.com/wp-content/uploads/2018/07/vasttrafik-ab-vector-logo-small.png'></img>";
+        "<img src='https://www.vasttrafik.se/logos/vt-logo-negative.svg' style='object-fit:cover;width:300px;height:60px;'></img>";
       return wrapper;
     }
     if (this.failure) {
