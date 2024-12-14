@@ -75,7 +75,7 @@ Module.register("MMM-Vasttrafik-PublicTransport", {
     if (this.stops) {
       for (let i = 0; i < this.stops.length; i++) {
         let stop = this.stops[i];
-		if (stop.lines.length) {
+        if (stop.lines.length) {
           if (this.config.showStopHeader) {
             let header = document.createElement("div");
             header.innerHTML = " <b>" + stop.name + "</b>";
@@ -104,6 +104,7 @@ Module.register("MMM-Vasttrafik-PublicTransport", {
           tableContainer.innerHTML = this.generateDepartureTable(stop);
           wrapper.appendChild(tableContainer);
         }
+      }
       this.depratureTablesLoaded = true;
       return wrapper;
     }
